@@ -3,7 +3,7 @@ pipeline {
     environment {
         AWS_ACCOUNT_ID = '992382545251' // Replace with your AWS Account ID
         AWS_REGION = 'us-east-1'         // Replace with your AWS Region (e.g., us-east-1)
-        ECR_REPOSITORY_NAME = 'flask_app' // Replace with your ECR repository name
+        ECR_REPOSITORY_NAME = 'lir_flask' // Replace with your ECR repository name
         IMAGE_TAG = "latest"
     }
     stages {
