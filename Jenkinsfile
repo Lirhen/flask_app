@@ -7,11 +7,6 @@ pipeline {
         IMAGE_TAG = "latest"
     }
     stages {
-        stage('Checkout Code') {
-            steps {
-		git credentialsId: 'github-ssh-key', url: 'git@github.com:Lirhen/flask_app.git', branch: 'main'
-            }
-        }
         stage('Build Docker Image') {
             steps {
                 script {
